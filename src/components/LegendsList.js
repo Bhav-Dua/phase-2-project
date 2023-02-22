@@ -1,12 +1,23 @@
 import React from "react";
-import { Card } from "semantic-ui-react";
+import Legend from "./Legend";
 
 function LegendsList({ legends }) {
     
     const toDisplay = legends.map(legend => (
-        <Card />
+        <Legend 
+        key={legend.id}
+        id={legend.id}
+        name={legend.name}
+        img={legend.image}
+        likes={legend.likes}
+        />
     ))
     
+    return (
+        <div>
+            {toDisplay}
+        </div>
+    )
 }
 
 export default LegendsList;
