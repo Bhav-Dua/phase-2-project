@@ -1,6 +1,7 @@
 import React from "react";
 
-function Legend({ id, name, img, likes }) {
+function LegendCard({ id, name, img, likes }) {
+    console.log(img)
 
     return (
         <div className="ui card">
@@ -16,4 +17,4 @@ function Legend({ id, name, img, likes }) {
     )
 }
 
-export default Legend;
+export default LegendCard;

@@ -1,10 +1,10 @@
 import React from "react";
-import Legend from "./Legend";
+import LegendCard from "./LegendCard";
 
 function LegendsList({ legends }) {
     
     const toDisplay = legends.map(legend => (
-        <Legend 
+        <LegendCard 
         key={legend.id}
         id={legend.id}
         name={legend.name}
