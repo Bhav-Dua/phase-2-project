@@ -3,6 +3,7 @@ import '../App.css';
 import 'semantic-ui-css/semantic.min.css';
 import Header from './Header';
 import LegendsList from './LegendsList';
+import LegendForm from './LegendForm';
 
 function App() {
 
@@ -13,6 +14,13 @@ function App() {
     .then(r => r.json())
     .then(setLegends)
   }, [])
+
+  function addLegend(newLegend) {
+    setLegends([
+      ...legends,
+      newLegend
+    ])
+  }
 
 
   return (
