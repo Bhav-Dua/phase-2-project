@@ -9,7 +9,6 @@ function LegendsList({ legends }) {
         id={legend.id}
         name={legend.name}
         img={legend.image}
-        likes={legend.likes}
         />
     ))
     

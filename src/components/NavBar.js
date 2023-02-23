@@ -6,7 +6,6 @@ function NavBar() {
         <nav>
             <NavLink to="/">Legends</NavLink>
             <NavLink to="/newLegend">Add A Legend</NavLink>
-            <NavLink to="/mostLiked">Most Liked</NavLink>
         </nav>
     )
 }

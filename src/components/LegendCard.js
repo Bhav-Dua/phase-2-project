@@ -1,7 +1,6 @@
 import React from "react";
 
-function LegendCard({ id, name, img, likes }) {
-    console.log(img)
+function LegendCard({ id, name, img}) {
 
     return (
         <div className="ui card">
@@ -10,8 +9,6 @@ function LegendCard({ id, name, img, likes }) {
             </div>
             <div className="content">
                 <h3 className="header">{name}</h3>
-                <p>Likes: {likes}</p>
-                {/* <button onClick={handleLike}>❤️</button> */}
             </div>
         </div>
     )
