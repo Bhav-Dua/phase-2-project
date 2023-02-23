@@ -28,16 +28,16 @@ function LegendForm({ addLegend }) {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label for="name">Name: </label>
+            <label for="name">Name </label>
             <input type="text" id="name" name="name" value={formData.name} onChange={handleFormData} />
             <br />
-            <label for="tactical" />
+            <label for="tactical">Tactical </label>
             <input type="text" id="tactical" name="tactical" value={formData.tactical} onChange={handleFormData} />
             <br />
-            <label for="ultimate" />
+            <label for="ultimate">Ultimate </label>
             <input type="text" id="ultimate" name="ultimate" value={formData.ultimate} onChange={handleFormData} />
             <br />
-            <label for="image" />
+            <label for="image">Image URL </label>
             <input type="text" id="image" name="image" value={formData.image} onChange={handleFormData} />
             <br />
             <input type="submit" value="Submit" />
