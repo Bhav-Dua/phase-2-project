@@ -14,7 +14,7 @@ function LegendsList({ legends }) {
     ))
     
     return (
-        <div>
+        <div className="ui cards">
             {toDisplay}
         </div>
     )
