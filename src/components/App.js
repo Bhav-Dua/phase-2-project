@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import '../App.css';
 import 'semantic-ui-css/semantic.min.css';
 import Header from './Header';
@@ -26,7 +27,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <LegendsList legends={legends} />
+      <Switch>
+        <Route path="/newLegend">
+          <LegendForm addLegend={addLegend} />
+        </Route>
+        <Route exact path="/">
+          <LegendsList legends={legends} />
+        </Route>
+      </Switch>
     </div>
   );
 }
