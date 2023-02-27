@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LegendCard({ id, name, img}) {
 
@@ -10,6 +11,7 @@ function LegendCard({ id, name, img}) {
             <div className="content">
                 <h3 className="header">{name}</h3>
             </div>
+            <Link to={`/legends/${id}`}>See more...</Link>
         </div>
     )
 }
