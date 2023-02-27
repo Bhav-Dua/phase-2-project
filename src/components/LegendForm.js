@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function LegendForm({ addLegend }) {
 
-    const [formData, setFormData] = useState({name: "", tactical: "", ultimate: "", image: ""})
+    const [formData, setFormData] = useState({name: "", passive: "", tactical: "", ultimate: "", image: ""})
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -30,6 +30,9 @@ function LegendForm({ addLegend }) {
         <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name </label>
             <input type="text" id="name" name="name" value={formData.name} onChange={handleFormData} />
+            <br />
+            <label htmlFor="passive">Passive </label>
+            <input type="text" id="passive" name="passive" value={formData.passive} onChange={handleFormData} />
             <br />
             <label htmlFor="tactical">Tactical </label>
             <input type="text" id="tactical" name="tactical" value={formData.tactical} onChange={handleFormData} />
