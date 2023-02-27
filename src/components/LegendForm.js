@@ -1,11 +1,14 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function LegendForm({ addLegend }) {
 
+    const history = useHistory();
     const [formData, setFormData] = useState({name: "", passive: "", tactical: "", ultimate: "", image: ""})
 
     function handleSubmit(e) {
         e.preventDefault();
+        e.target.reset();
 
         fetch("http://localhost:3001/legends", {
             method: "POST",
@@ -15,8 +18,10 @@ function LegendForm({ addLegend }) {
             body: JSON.stringify(formData)
         })
             .then(r => r.json())
-            .then(addLegend)
-
+            .then(data => {
+                addLegend(data)
+                history.push("/")
+            })
     }
 
     function handleFormData(e) {
