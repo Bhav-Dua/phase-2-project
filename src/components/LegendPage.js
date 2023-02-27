@@ -9,8 +9,10 @@ function LegendPage() {
     useEffect(() => {
         fetch(`http://localhost:3001/legends/${id}`)
             .then(r => r.json())
-            .then(setLegend)
+            .then(data => setLegend(data))
     }, [id])
+
+    if (!legend) return <></>;
 
     return (
         <div className="legend_Page">
