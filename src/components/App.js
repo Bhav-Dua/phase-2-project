@@ -5,6 +5,7 @@ import 'semantic-ui-css/semantic.min.css';
 import Header from './Header';
 import LegendsList from './LegendsList';
 import LegendForm from './LegendForm';
+import LegendPage from './LegendPage';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
       <Switch>
         <Route path="/newLegend">
           <LegendForm addLegend={addLegend} />
+        </Route>
+        <Route path="/legends/:id">
+          <LegendPage />
         </Route>
         <Route exact path="/">
           <LegendsList legends={legends} />
