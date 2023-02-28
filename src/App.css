@@ -18,3 +18,22 @@
   color: white;
   padding: 20px;
 }
+
+.navbar {
+  display: flex;
+}
+
+.link_left {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-right: 75vh;
+  color: purple;
+}
+
+.link_right {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 75vh;
+  color: purple;
+}
+
