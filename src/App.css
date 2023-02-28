@@ -3,6 +3,8 @@
 }
 
 .logo {
+  display: flex;
+  padding-top: 10px;
   height: 15vh;
   pointer-events: none;
 }
@@ -35,5 +37,19 @@
   padding-bottom: 30px;
   padding-left: 75vh;
   color: purple;
+}
+
+.ui.form {
+  display: inline-block;
+  padding-top: 5vh;
+  width: 50vh;
+}
+
+.field label {
+  text-align: left;
+}
+
+.ui.cards {
+  padding-top: 5vh;
 }
 
