@@ -20,7 +20,7 @@ function LegendForm({ addLegend }) {
             .then(r => r.json())
             .then(data => {
                 addLegend(data)
-                history.push("/")
+                history.push(`/legends/${data.id}`)
             })
     }
 

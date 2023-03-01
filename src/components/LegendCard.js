@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function LegendCard({ id, name, img}) {
+function LegendCard({ id, name, img }) {
 
     return (
         <div className="ui card">
