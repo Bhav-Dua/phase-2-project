@@ -15,18 +15,17 @@ function LegendPage() {
     if (!legend) return <></>;
 
     return (
-        <div className="legend_Page">
-            <div className="legend_Image">
+        <div className="legend-Page">
+            <div className="legend-image">
                 <img src={legend.image} alt={legend.name} />
             </div>
-            <div className="legend_Content">
+            <div className="legend-content">
                 <h1>{legend.name}</h1>
                 <h2>Abilities</h2>
-                <ul>
-                    <li><b>Passive: </b>{legend.passive}</li>
-                    <li><b>Tactical: </b>{legend.tactical}</li>
-                    <li><b>Ultimate: </b>{legend.ultimate}</li>
-                </ul>
+                <p><b>Passive: </b>{legend.passive}<br />
+                    <b>Tactical: </b>{legend.tactical}<br />
+                    <b>Ultimate: </b>{legend.ultimate}
+                </p>
             </div>
         </div>
     )

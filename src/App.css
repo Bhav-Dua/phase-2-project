@@ -53,3 +53,23 @@
   padding-top: 5vh;
 }
 
+.legendPage {
+  display: flex;
+}
+
+.legend-image, .legend-content {
+  display: inline-block;
+  width: 50%;
+}
+
+.legend-image img{
+  padding-top: 20px;
+  height: 50vh;
+}
+
+.legend-content {
+  float: right;
+  padding-top: 15vh;
+  font-size: larger;
+  text-align: left;
+}
